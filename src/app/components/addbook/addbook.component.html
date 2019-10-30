@@ -1,0 +1,72 @@
+
+<form class ="container1">
+  <div class="form-group">
+    <label for="exampleInputEmail1">bookId</label>
+    <input
+      type="text"
+      name="id"
+      [(ngModel)]="book.bookId"
+      id="bookId"
+      class="form-control"
+      placeholder="Enter id"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">title</label>
+    <input
+      type="text"
+      name="title"
+      [(ngModel)]="book.title"
+      class="form-control"
+      id="title"
+      aria-describedby="emailHelp"
+      placeholder="Enter title"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">price</label>
+    <input
+      type="text"
+      name="price"
+      [(ngModel)]="book.price"
+      class="form-control"
+      id="publisher"
+      aria-describedby="emailHelp"
+      placeholder="Enter price"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">author</label>
+    <input
+      type="text"
+      name="author"
+      [(ngModel)]="book.author"
+      class="form-control"
+      id="price"
+      aria-describedby="emailHelp"
+      placeholder="Enter author"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">stock</label>
+    <input
+      type="text"
+      name="stock"
+      [(ngModel)]="book.stock"
+      class="form-control"
+      id="stock"
+      aria-describedby="emailHelp"
+      placeholder="Enter stock"
+    />
+  </div>
+  <div class="submit" align="center">
+  <button (click)="addBook(book)" type="submit" class="btn btn-primary">
+    Submit
+  </button>
+  </div>
+</form>
+

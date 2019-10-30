@@ -1,0 +1,32 @@
+<div class="container bungkus">
+  <h1 align="center" id="satu">LIST</h1>
+  <h2 align="center" id="dua">BUKU</h2>
+  <br>
+  <table align="center" id="table">
+  <thead>
+    <tr>
+      <th id="th1">Book Id</th>
+      <th id="th2">Title</th>
+      <th id="th3">Author</th>
+      <th id="th4">Price</th>
+      <th id="th5">Stock</th>
+      <th id="th6">Update</th>
+      <th id="th7">Delete</th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+    <tr *ngFor="let b of book">
+      <td>{{b.book_id}}</td>
+      <td>{{b.title}}</td>
+      <td>{{b.author}}</td>
+      <td>{{b.price}}</td>
+      <td>{{b.stock}}</td>
+      <td><button (click)="getBookByBookId(b.book_id)" class="btn btn-primary">Detail</button>
+      <td><button (click)="deleteBook(b.book_id)" class="btn btn-info">Delete</button>
+
+    </tr>
+  </tbody>
+</table>
+<br>
+<a href="http://localhost:2222/books/download" target="_blank"  class="btn btn-danger btn-xs" role="button">Download</a>
+</div>

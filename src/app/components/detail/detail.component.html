@@ -1,0 +1,66 @@
+
+<form [formGroup]="form" class ="container1">
+  <div class="form-group">
+    <label for="exampleInputEmail1">book Id</label>
+    <input
+      type="text"
+      formControlName='book_id'
+      class="form-control"
+      placeholder="Enter id"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">title</label>
+    <input
+      type="text"
+      formControlName='title'
+      class="form-control"
+
+      aria-describedby="emailHelp"
+      placeholder="Enter title"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">price</label>
+    <input
+      type="text"
+      formControlName='price'
+      class="form-control"
+
+      aria-describedby="emailHelp"
+      placeholder="Enter price"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">author</label>
+    <input
+      type="text"
+      formControlName='author'
+      class="form-control"
+
+      aria-describedby="emailHelp"
+      placeholder="Enter author"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">stock</label>
+    <input
+      type="text"
+      formControlName='stock'
+      class="form-control"
+
+      aria-describedby="emailHelp"
+      placeholder="Enter stock"
+    />
+  </div>
+  <div class="submit" align="center">
+  <button (click)="updateBook()" type="submit" class="btn btn-primary">
+    Update
+  </button>
+  </div>
+</form>
+
